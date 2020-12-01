@@ -1,1314 +1,650 @@
 <!DOCTYPE html>
 <html class="html" lang="en-US">
-
 <head>
 	<meta charset="UTF-8">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<title>CityCo &#8211; Disrupting Waste Management with Data</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-	<link rel='dns-prefetch' href='//s.w.org' />
-	<link rel="alternate" type="application/rss+xml" title="CityCo &raquo; Feed" href="https://cityco.tech/feed" />
-	<link rel="alternate" type="application/rss+xml" title="CityCo &raquo; Comments Feed"
-		href="https://cityco.tech/comments/feed" />
-	<!-- This site uses the Google Analytics by MonsterInsights plugin v7.13.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
-	<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
-	<!-- No UA code set -->
-	<!-- / Google Analytics by MonsterInsights -->
-	<script type="text/javascript">
-		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/cityco.tech\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3" } };
-		!function (e, a, t) { var r, n, o, i, p = a.createElement("canvas"), s = p.getContext && p.getContext("2d"); function c(e, t) { var a = String.fromCharCode; s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, e), 0, 0); var r = p.toDataURL(); return s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, t), 0, 0), r === p.toDataURL() } function l(e) { if (!s || !s.fillText) return !1; switch (s.textBaseline = "top", s.font = "600 32px Arial", e) { case "flag": return !c([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) && (!c([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !c([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447])); case "emoji": return !c([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212]) }return !1 } function d(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (i = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, o = 0; o < i.length; o++)t.supports[i[o]] = l(i[o]), t.supports.everything = t.supports.everything && t.supports[i[o]], "flag" !== i[o] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[i[o]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (r = t.source || {}).concatemoji ? d(r.concatemoji) : r.wpemoji && r.twemoji && (d(r.twemoji), d(r.wpemoji))) }(window, document, window._wpemojiSettings);
-	</script>
-	<style type="text/css">
-		img.wp-smiley,
-		img.emoji {
-			display: inline !important;
-			border: none !important;
-			box-shadow: none !important;
-			height: 1em !important;
-			width: 1em !important;
-			margin: 0 .07em !important;
-			vertical-align: -0.1em !important;
-			background: none !important;
-			padding: 0 !important;
-		}
-	</style>
-	<link rel='stylesheet' id='wp-block-library-css'
-		href='https://cityco.tech/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css'
-		media='all' />
-	<link rel='stylesheet' id='wp-block-library-theme-css'
-		href='https://cityco.tech/wp-includes/css/dist/block-library/theme.min.css?ver=5.5.3' type='text/css'
-		media='all' />
-	<link rel='stylesheet' id='sticky-header-oceanwp-style-css'
-		href='https://cityco.tech/wp-content/plugins/sticky-header-oceanwp//style.css?ver=5.5.3' type='text/css'
-		media='all' />
-	<link rel='stylesheet' id='monsterinsights-popular-posts-style-css'
-		href='https://cityco.tech/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.13.2'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='hfe-style-css'
-		href='https://cityco.tech/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.5.3'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='elementor-icons-css'
-		href='https://cityco.tech/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.9.1'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='elementor-animations-css'
-		href='https://cityco.tech/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.0.14'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='elementor-frontend-legacy-css'
-		href='https://cityco.tech/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.0.14'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='elementor-frontend-css'
-		href='https://cityco.tech/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.0.14' type='text/css'
-		media='all' />
-	<link rel='stylesheet' id='elementor-post-8-css'
-		href='https://cityco.tech/wp-content/uploads/elementor/css/post-8.css?ver=1598397559' type='text/css'
-		media='all' />
-	<link rel='stylesheet' id='elementor-post-13-css'
-		href='https://cityco.tech/wp-content/uploads/elementor/css/post-13.css?ver=1606839676' type='text/css'
-		media='all' />
-	<link rel='stylesheet' id='hfe-widgets-style-css'
-		href='https://cityco.tech/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.5.3'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='font-awesome-css'
-		href='https://cityco.tech/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css?ver=5.15.1'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='simple-line-icons-css'
-		href='https://cityco.tech/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css?ver=2.4.0'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='magnific-popup-css'
-		href='https://cityco.tech/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css?ver=1.0.0'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='slick-css'
-		href='https://cityco.tech/wp-content/themes/oceanwp/assets/css/third/slick.min.css?ver=1.6.0' type='text/css'
-		media='all' />
-	<link rel='stylesheet' id='oceanwp-style-css'
-		href='https://cityco.tech/wp-content/themes/oceanwp/assets/css/style.min.css?ver=2.0.0' type='text/css'
-		media='all' />
-	<link rel='stylesheet' id='oceanwp-google-font-poppins-css'
-		href='//fonts.googleapis.com/css?family=Poppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;subset=latin&#038;display=swap&#038;ver=5.5.3'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='google-fonts-1-css'
-		href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='elementor-icons-shared-0-css'
-		href='https://cityco.tech/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.12.0'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='elementor-icons-fa-solid-css'
-		href='https://cityco.tech/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.12.0'
-		type='text/css' media='all' />
-	<script type='text/javascript' src='https://cityco.tech/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'
-		id='jquery-core-js'></script>
-	<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/sticky-header-oceanwp//main.js?ver=1.0.0'
-		id='sticky-header-oceanwp-js'></script>
-	<link rel="https://api.w.org/" href="https://cityco.tech/wp-json/" />
-	<link rel="alternate" type="application/json" href="https://cityco.tech/wp-json/wp/v2/pages/13" />
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://cityco.tech/xmlrpc.php?rsd" />
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://cityco.tech/wp-includes/wlwmanifest.xml" />
-	<meta name="generator" content="WordPress 5.5.3" />
-	<link rel="canonical" href="https://cityco.tech/" />
-	<link rel='shortlink' href='https://cityco.tech/' />
-	<link rel="alternate" type="application/json+oembed"
-		href="https://cityco.tech/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcityco.tech%2F" />
-	<link rel="alternate" type="text/xml+oembed"
-		href="https://cityco.tech/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcityco.tech%2F&#038;format=xml" />
-	<script>var sticky_header_style = "";</script>
-	<style type="text/css">
-		.recentcomments a {
-			display: inline !important;
-			padding: 0 !important;
-			margin: 0 !important;
-		}
-	</style>
-	<link rel="icon" href="https://cityco.tech/wp-content/uploads/2020/04/cropped-logo_small_thumb-1-32x32.png"
-		sizes="32x32" />
-	<link rel="icon" href="https://cityco.tech/wp-content/uploads/2020/04/cropped-logo_small_thumb-1-192x192.png"
-		sizes="192x192" />
-	<link rel="apple-touch-icon"
-		href="https://cityco.tech/wp-content/uploads/2020/04/cropped-logo_small_thumb-1-180x180.png" />
-	<meta name="msapplication-TileImage"
-		content="https://cityco.tech/wp-content/uploads/2020/04/cropped-logo_small_thumb-1-270x270.png" />
-	<!-- OceanWP CSS -->
-	<style type="text/css">
-		/* General CSS */
-		a:hover,
-		a.light:hover,
-		.theme-heading .text::before,
-		.theme-heading .text::after,
-		#top-bar-content>a:hover,
-		#top-bar-social li.oceanwp-email a:hover,
-		#site-navigation-wrap .dropdown-menu>li>a:hover,
-		#site-header.medium-header #medium-searchform button:hover,
-		.oceanwp-mobile-menu-icon a:hover,
-		.blog-entry.post .blog-entry-header .entry-title a:hover,
-		.blog-entry.post .blog-entry-readmore a:hover,
-		.blog-entry.thumbnail-entry .blog-entry-category a,
-		ul.meta li a:hover,
-		.dropcap,
-		.single nav.post-navigation .nav-links .title,
-		body .related-post-title a:hover,
-		body #wp-calendar caption,
-		body .contact-info-widget.default i,
-		body .contact-info-widget.big-icons i,
-		body .custom-links-widget .oceanwp-custom-links li a:hover,
-		body .custom-links-widget .oceanwp-custom-links li a:hover:before,
-		body .posts-thumbnails-widget li a:hover,
-		body .social-widget li.oceanwp-email a:hover,
-		.comment-author .comment-meta .comment-reply-link,
-		#respond #cancel-comment-reply-link:hover,
-		#footer-widgets .footer-box a:hover,
-		#footer-bottom a:hover,
-		#footer-bottom #footer-bottom-menu a:hover,
-		.sidr a:hover,
-		.sidr-class-dropdown-toggle:hover,
-		.sidr-class-menu-item-has-children.active>a,
-		.sidr-class-menu-item-has-children.active>a>.sidr-class-dropdown-toggle,
-		input[type=checkbox]:checked:before {
-			color: #156150
-		}
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="CityCo &raquo; Feed" href="https://cityco.tech/feed" />
+<link rel="alternate" type="application/rss+xml" title="CityCo &raquo; Comments Feed" href="https://cityco.tech/comments/feed" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.13.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+<!-- No UA code set -->
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/cityco.tech\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://cityco.tech/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://cityco.tech/wp-includes/css/dist/block-library/theme.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='sticky-header-oceanwp-style-css'  href='https://cityco.tech/wp-content/plugins/sticky-header-oceanwp//style.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='monsterinsights-popular-posts-style-css'  href='https://cityco.tech/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.13.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hfe-style-css'  href='https://cityco.tech/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://cityco.tech/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='https://cityco.tech/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.0.14' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-legacy-css'  href='https://cityco.tech/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.0.14' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://cityco.tech/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.0.14' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-8-css'  href='https://cityco.tech/wp-content/uploads/elementor/css/post-8.css?ver=1598397559' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-13-css'  href='https://cityco.tech/wp-content/uploads/elementor/css/post-13.css?ver=1606839676' type='text/css' media='all' />
+<link rel='stylesheet' id='hfe-widgets-style-css'  href='https://cityco.tech/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://cityco.tech/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css?ver=5.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-line-icons-css'  href='https://cityco.tech/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css?ver=2.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://cityco.tech/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css'  href='https://cityco.tech/wp-content/themes/oceanwp/assets/css/third/slick.min.css?ver=1.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='oceanwp-style-css'  href='https://cityco.tech/wp-content/themes/oceanwp/assets/css/style.min.css?ver=2.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='oceanwp-google-font-poppins-css'  href='//fonts.googleapis.com/css?family=Poppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;subset=latin&#038;display=swap&#038;ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='https://cityco.tech/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.12.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='https://cityco.tech/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.12.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://cityco.tech/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/sticky-header-oceanwp//main.js?ver=1.0.0' id='sticky-header-oceanwp-js'></script>
+<link rel="https://api.w.org/" href="https://cityco.tech/wp-json/" /><link rel="alternate" type="application/json" href="https://cityco.tech/wp-json/wp/v2/pages/13" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://cityco.tech/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://cityco.tech/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.3" />
+<link rel="canonical" href="https://cityco.tech/" />
+<link rel='shortlink' href='https://cityco.tech/' />
+<link rel="alternate" type="application/json+oembed" href="https://cityco.tech/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcityco.tech%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://cityco.tech/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcityco.tech%2F&#038;format=xml" />
+<script>var sticky_header_style = "";</script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://cityco.tech/wp-content/uploads/2020/04/cropped-logo_small_thumb-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://cityco.tech/wp-content/uploads/2020/04/cropped-logo_small_thumb-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://cityco.tech/wp-content/uploads/2020/04/cropped-logo_small_thumb-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://cityco.tech/wp-content/uploads/2020/04/cropped-logo_small_thumb-1-270x270.png" />
+<!-- OceanWP CSS -->
+<style type="text/css">
+/* General CSS */a:hover,a.light:hover,.theme-heading .text::before,.theme-heading .text::after,#top-bar-content >a:hover,#top-bar-social li.oceanwp-email a:hover,#site-navigation-wrap .dropdown-menu >li >a:hover,#site-header.medium-header #medium-searchform button:hover,.oceanwp-mobile-menu-icon a:hover,.blog-entry.post .blog-entry-header .entry-title a:hover,.blog-entry.post .blog-entry-readmore a:hover,.blog-entry.thumbnail-entry .blog-entry-category a,ul.meta li a:hover,.dropcap,.single nav.post-navigation .nav-links .title,body .related-post-title a:hover,body #wp-calendar caption,body .contact-info-widget.default i,body .contact-info-widget.big-icons i,body .custom-links-widget .oceanwp-custom-links li a:hover,body .custom-links-widget .oceanwp-custom-links li a:hover:before,body .posts-thumbnails-widget li a:hover,body .social-widget li.oceanwp-email a:hover,.comment-author .comment-meta .comment-reply-link,#respond #cancel-comment-reply-link:hover,#footer-widgets .footer-box a:hover,#footer-bottom a:hover,#footer-bottom #footer-bottom-menu a:hover,.sidr a:hover,.sidr-class-dropdown-toggle:hover,.sidr-class-menu-item-has-children.active >a,.sidr-class-menu-item-has-children.active >a >.sidr-class-dropdown-toggle,input[type=checkbox]:checked:before{color:#156150}input[type="button"],input[type="reset"],input[type="submit"],button[type="submit"],.button,#site-navigation-wrap .dropdown-menu >li.btn >a >span,.thumbnail:hover i,.post-quote-content,.omw-modal .omw-close-modal,body .contact-info-widget.big-icons li:hover i,body div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],body div.wpforms-container-full .wpforms-form .wpforms-page-button{background-color:#156150}.widget-title{border-color:#156150}blockquote{border-color:#156150}#searchform-dropdown{border-color:#156150}.dropdown-menu .sub-menu{border-color:#156150}.blog-entry.large-entry .blog-entry-readmore a:hover{border-color:#156150}.oceanwp-newsletter-form-wrap input[type="email"]:focus{border-color:#156150}.social-widget li.oceanwp-email a:hover{border-color:#156150}#respond #cancel-comment-reply-link:hover{border-color:#156150}body .contact-info-widget.big-icons li:hover i{border-color:#156150}#footer-widgets .oceanwp-newsletter-form-wrap input[type="email"]:focus{border-color:#156150}input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,button[type="submit"]:hover,input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,button[type="submit"]:focus,.button:hover,#site-navigation-wrap .dropdown-menu >li.btn >a:hover >span,.post-quote-author,.omw-modal .omw-close-modal:hover,body div.wpforms-container-full .wpforms-form input[type=submit]:hover,body div.wpforms-container-full .wpforms-form button[type=submit]:hover,body div.wpforms-container-full .wpforms-form .wpforms-page-button:hover{background-color:#26605d}a:hover{color:#156150}/* Header CSS */#site-header.has-header-media .overlay-header-media{background-color:rgba(0,0,0,0.5)}#site-logo #site-logo-inner a img,#site-header.center-header #site-navigation-wrap .middle-site-logo a img{max-width:73px}.effect-one #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-three #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{background-color:#156150}.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{color:#156150}.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{text-shadow:10px 0 #156150,-10px 0 #156150}#site-navigation-wrap .dropdown-menu >li >a:hover,.oceanwp-mobile-menu-icon a:hover,#searchform-header-replace-close:hover{color:#156150}#site-navigation-wrap .dropdown-menu >.current-menu-item >a,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a,#site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover{color:#156150}.dropdown-menu .sub-menu,#searchform-dropdown,.current-shop-items-dropdown{border-color:#156150}/* Typography CSS */body{font-family:Poppins}h1,h2,h3,h4,h5,h6,.theme-heading,.widget-title,.oceanwp-widget-recent-posts-title,.comment-reply-title,.entry-title,.sidebar-box .widget-title{font-family:Poppins}
+</style></head>
 
-		input[type="button"],
-		input[type="reset"],
-		input[type="submit"],
-		button[type="submit"],
-		.button,
-		#site-navigation-wrap .dropdown-menu>li.btn>a>span,
-		.thumbnail:hover i,
-		.post-quote-content,
-		.omw-modal .omw-close-modal,
-		body .contact-info-widget.big-icons li:hover i,
-		body div.wpforms-container-full .wpforms-form input[type=submit],
-		body div.wpforms-container-full .wpforms-form button[type=submit],
-		body div.wpforms-container-full .wpforms-form .wpforms-page-button {
-			background-color: #156150
-		}
+<body class="home page-template page-template-elementor_header_footer page page-id-13 wp-custom-logo wp-embed-responsive ehf-template-oceanwp ehf-stylesheet-oceanwp oceanwp-theme dropdown-mobile default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-13" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
-		.widget-title {
-			border-color: #156150
-		}
-
-		blockquote {
-			border-color: #156150
-		}
-
-		#searchform-dropdown {
-			border-color: #156150
-		}
-
-		.dropdown-menu .sub-menu {
-			border-color: #156150
-		}
-
-		.blog-entry.large-entry .blog-entry-readmore a:hover {
-			border-color: #156150
-		}
-
-		.oceanwp-newsletter-form-wrap input[type="email"]:focus {
-			border-color: #156150
-		}
-
-		.social-widget li.oceanwp-email a:hover {
-			border-color: #156150
-		}
-
-		#respond #cancel-comment-reply-link:hover {
-			border-color: #156150
-		}
-
-		body .contact-info-widget.big-icons li:hover i {
-			border-color: #156150
-		}
-
-		#footer-widgets .oceanwp-newsletter-form-wrap input[type="email"]:focus {
-			border-color: #156150
-		}
-
-		input[type="button"]:hover,
-		input[type="reset"]:hover,
-		input[type="submit"]:hover,
-		button[type="submit"]:hover,
-		input[type="button"]:focus,
-		input[type="reset"]:focus,
-		input[type="submit"]:focus,
-		button[type="submit"]:focus,
-		.button:hover,
-		#site-navigation-wrap .dropdown-menu>li.btn>a:hover>span,
-		.post-quote-author,
-		.omw-modal .omw-close-modal:hover,
-		body div.wpforms-container-full .wpforms-form input[type=submit]:hover,
-		body div.wpforms-container-full .wpforms-form button[type=submit]:hover,
-		body div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
-			background-color: #26605d
-		}
-
-		a:hover {
-			color: #156150
-		}
-
-		/* Header CSS */
-		#site-header.has-header-media .overlay-header-media {
-			background-color: rgba(0, 0, 0, 0.5)
-		}
-
-		#site-logo #site-logo-inner a img,
-		#site-header.center-header #site-navigation-wrap .middle-site-logo a img {
-			max-width: 73px
-		}
-
-		.effect-one #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:after,
-		.effect-three #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:after,
-		.effect-five #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:before,
-		.effect-five #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:after,
-		.effect-nine #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:before,
-		.effect-nine #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:after {
-			background-color: #156150
-		}
-
-		.effect-four #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:before,
-		.effect-four #site-navigation-wrap .dropdown-menu>li>a.menu-link>span:after,
-		.effect-seven #site-navigation-wrap .dropdown-menu>li>a.menu-link:hover>span:after,
-		.effect-seven #site-navigation-wrap .dropdown-menu>li.sfHover>a.menu-link>span:after {
-			color: #156150
-		}
-
-		.effect-seven #site-navigation-wrap .dropdown-menu>li>a.menu-link:hover>span:after,
-		.effect-seven #site-navigation-wrap .dropdown-menu>li.sfHover>a.menu-link>span:after {
-			text-shadow: 10px 0 #156150, -10px 0 #156150
-		}
-
-		#site-navigation-wrap .dropdown-menu>li>a:hover,
-		.oceanwp-mobile-menu-icon a:hover,
-		#searchform-header-replace-close:hover {
-			color: #156150
-		}
-
-		#site-navigation-wrap .dropdown-menu>.current-menu-item>a,
-		#site-navigation-wrap .dropdown-menu>.current-menu-ancestor>a,
-		#site-navigation-wrap .dropdown-menu>.current-menu-item>a:hover,
-		#site-navigation-wrap .dropdown-menu>.current-menu-ancestor>a:hover {
-			color: #156150
-		}
-
-		.dropdown-menu .sub-menu,
-		#searchform-dropdown,
-		.current-shop-items-dropdown {
-			border-color: #156150
-		}
-
-		/* Typography CSS */
-		body {
-			font-family: Poppins
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6,
-		.theme-heading,
-		.widget-title,
-		.oceanwp-widget-recent-posts-title,
-		.comment-reply-title,
-		.entry-title,
-		.sidebar-box .widget-title {
-			font-family: Poppins
-		}
-	</style>
-</head>
-
-<body
-	class="home page-template page-template-elementor_header_footer page page-id-13 wp-custom-logo wp-embed-responsive ehf-template-oceanwp ehf-stylesheet-oceanwp oceanwp-theme dropdown-mobile default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-13"
-	itemscope="itemscope" itemtype="https://schema.org/WebPage">
-
-
-
+	
+	
 	<div id="outer-wrap" class="site clr">
 
 		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 
-
+		
 		<div id="wrap" class="clr">
 
+			
+			
+<header id="site-header" class="minimal-header effect-three clr" data-height="74" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
 
+	
+					
+			<div id="site-header-inner" class="clr container">
 
-			<header id="site-header" class="minimal-header effect-three clr" data-height="74" itemscope="itemscope"
-				itemtype="https://schema.org/WPHeader" role="banner">
+				
+				
 
+<div id="site-logo" class="clr" itemscope itemtype="https://schema.org/Brand" >
 
+	
+	<div id="site-logo-inner" class="clr">
 
-				<div id="site-header-inner" class="clr container">
+		<a href="https://cityco.tech/" class="custom-logo-link" rel="home" aria-current="page"><img width="660" height="567" src="https://cityco.tech/wp-content/uploads/2020/12/cropped-cityco.-lg.png" class="custom-logo" alt="CityCo" srcset="https://cityco.tech/wp-content/uploads/2020/12/cropped-cityco.-lg.png 1x, https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg.png 2x" /></a>
+	</div><!-- #site-logo-inner -->
 
+	
+	
+</div><!-- #site-logo -->
 
+			<div id="site-navigation-wrap" class="clr">
+			
+			
+			
+			<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation" >
 
+				<ul id="menu-main" class="main-menu dropdown-menu sf-menu"><li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-48"><a href="https://cityco.tech" class="menu-link"><span class="text-wrap">Home</span></a></li><li id="menu-item-298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a href="https://cityco.tech/ekva" class="menu-link"><span class="text-wrap">EKVA</span></a></li><li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="https://cityco.tech/citycollection" class="menu-link"><span class="text-wrap">CityCollection</span></a></li><li id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="https://cityco.tech/our-solutions" class="menu-link"><span class="text-wrap">Our Solutions</span></a></li><li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="https://cityco.tech/contact-us" class="menu-link"><span class="text-wrap">Contact Us</span></a></li></ul>
+			</nav><!-- #site-navigation -->
 
-					<div id="site-logo" class="clr" itemscope itemtype="https://schema.org/Brand">
-
-
-						<div id="site-logo-inner" class="clr">
-
-							<a href="https://cityco.tech/" class="custom-logo-link" rel="home" aria-current="page"><img
-									width="660" height="567"
-									src="https://cityco.tech/wp-content/uploads/2020/12/cropped-cityco.-lg.png"
-									class="custom-logo" alt="CityCo"
-									srcset="https://cityco.tech/wp-content/uploads/2020/12/cropped-cityco.-lg.png 1x, https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg.png 2x" /></a>
-						</div><!-- #site-logo-inner -->
-
-
-
-					</div><!-- #site-logo -->
-
-					<div id="site-navigation-wrap" class="clr">
-
-
-
-						<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope"
-							itemtype="https://schema.org/SiteNavigationElement" role="navigation">
-
-							<ul id="menu-main" class="main-menu dropdown-menu sf-menu">
-								<li id="menu-item-48"
-									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-48">
-									<a href="https://cityco.tech" class="menu-link"><span
-											class="text-wrap">Home</span></a></li>
-								<li id="menu-item-298"
-									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a
-										href="https://cityco.tech/ekva" class="menu-link"><span
-											class="text-wrap">EKVA</span></a></li>
-								<li id="menu-item-234"
-									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a
-										href="https://cityco.tech/citycollection" class="menu-link"><span
-											class="text-wrap">CityCollection</span></a></li>
-								<li id="menu-item-233"
-									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a
-										href="https://cityco.tech/our-solutions" class="menu-link"><span
-											class="text-wrap">Our Solutions</span></a></li>
-								<li id="menu-item-235"
-									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a
-										href="https://cityco.tech/contact-us" class="menu-link"><span
-											class="text-wrap">Contact Us</span></a></li>
-							</ul>
-						</nav><!-- #site-navigation -->
-
-
-
+			
+			
 					</div><!-- #site-navigation-wrap -->
+			
+		
+	
+				
+	<div class="oceanwp-mobile-menu-icon clr mobile-right">
 
-
-
-
-					<div class="oceanwp-mobile-menu-icon clr mobile-right">
-
-
-
-
-						<a href="javascript:void(0)" class="mobile-menu" aria-label="Mobile Menu">
+		
+		
+		
+		<a href="javascript:void(0)" class="mobile-menu"  aria-label="Mobile Menu">
 							<i class="fa fa-bars" aria-hidden="true"></i>
-							<span class="oceanwp-text">Menu</span>
-							<span class="oceanwp-close-text">Close</span>
+								<span class="oceanwp-text">Menu</span>
+				<span class="oceanwp-close-text">Close</span>
 						</a>
 
+		
+		
+		
+	</div><!-- #oceanwp-mobile-menu-navbar -->
 
 
+			</div><!-- #site-header-inner -->
 
-					</div><!-- #oceanwp-mobile-menu-navbar -->
+			
+<div id="mobile-dropdown" class="clr" >
 
+	<nav class="clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
 
-				</div><!-- #site-header-inner -->
+		<ul id="menu-main-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-48"><a href="https://cityco.tech" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a href="https://cityco.tech/ekva">EKVA</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="https://cityco.tech/citycollection">CityCollection</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="https://cityco.tech/our-solutions">Our Solutions</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="https://cityco.tech/contact-us">Contact Us</a></li>
+</ul>
+	</nav>
 
+</div>
 
-				<div id="mobile-dropdown" class="clr">
-
-					<nav class="clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
-
-						<ul id="menu-main-1" class="menu">
-							<li
-								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-48">
-								<a href="https://cityco.tech" aria-current="page">Home</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a
-									href="https://cityco.tech/ekva">EKVA</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a
-									href="https://cityco.tech/citycollection">CityCollection</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a
-									href="https://cityco.tech/our-solutions">Our Solutions</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a
-									href="https://cityco.tech/contact-us">Contact Us</a></li>
-						</ul>
-					</nav>
-
-				</div>
+			
+			
+		
+		
+</header><!-- #site-header -->
 
 
+			
+			<main id="main" class="site-main clr"  role="main">
 
-
-
-			</header><!-- #site-header -->
-
-
-
-			<main id="main" class="site-main clr" role="main">
-
-				<div data-elementor-type="wp-page" data-elementor-id="13" class="elementor elementor-13"
-					data-elementor-settings="[]">
-					<div class="elementor-inner">
-						<div class="elementor-section-wrap">
-							<section
-								class="elementor-section elementor-top-section elementor-element elementor-element-9095ca0 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-								data-id="9095ca0" data-element_type="section"
-								data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/www.youtube.com\/watch?v=3L_g_vL2uCY&amp;ab_channel=EarthByDrone&quot;,&quot;background_video_start&quot;:15,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+						<div data-elementor-type="wp-page" data-elementor-id="13" class="elementor elementor-13" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-9095ca0 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="9095ca0" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/www.youtube.com\/watch?v=3L_g_vL2uCY&amp;ab_channel=EarthByDrone&quot;,&quot;background_video_start&quot;:15,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
 								<div class="elementor-background-video-container">
-									<div class="elementor-background-video-embed"></div>
-								</div>
-								<div class="elementor-background-overlay"></div>
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
-										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-41c0ea8"
-											data-id="41c0ea8" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-9f319a8 elementor-widget elementor-widget-heading"
-														data-id="9f319a8" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																CityCo<span style="font-weight: normal;">.</span></h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-3b617b5 elementor-widget elementor-widget-heading"
-														data-id="3b617b5" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																<span style="font-weight: normal;">Connecting the Waste
-																	Management Value Chain <br>with Technology and
-																	Data.</span></h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-30df007 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
-														data-id="30df007" data-element_type="widget"
-														data-widget_type="button.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-button-wrapper">
-																<a href="https://cityco.tech/contact-us"
-																	class="elementor-button-link elementor-button elementor-size-sm"
-																	role="button">
-																	<span class="elementor-button-content-wrapper">
-																		<span
-																			class="elementor-button-icon elementor-align-icon-right">
-																			<i aria-hidden="true"
-																				class="fas fa-chevron-right"></i>
-																		</span>
-																		<span class="elementor-button-text">Contact
-																			Us</span>
-																	</span>
-																</a>
-															</div>
-														</div>
-													</div>
+													<div class="elementor-background-video-embed"></div>
 												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<section
-								class="elementor-section elementor-top-section elementor-element elementor-element-dd5b5be elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-								data-id="dd5b5be" data-element_type="section"
-								data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
-										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f66119c"
-											data-id="f66119c" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<section
-														class="elementor-section elementor-inner-section elementor-element elementor-element-07e9185 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-														data-id="07e9185" data-element_type="section">
-														<div class="elementor-container elementor-column-gap-default">
-															<div class="elementor-row">
-																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-175263c"
-																	data-id="175263c" data-element_type="column">
-																	<div
-																		class="elementor-column-wrap elementor-element-populated">
-																		<div class="elementor-widget-wrap">
-																			<div class="elementor-element elementor-element-3a5ad7f elementor-widget elementor-widget-heading"
-																				data-id="3a5ad7f"
-																				data-element_type="widget"
-																				data-widget_type="heading.default">
-																				<div class="elementor-widget-container">
-																					<h2
-																						class="elementor-heading-title elementor-size-default">
-																						Who <span
-																							style="font-weight: normal;">are
-																						</span>we?</h2>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-c9e247f elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-																				data-id="c9e247f"
-																				data-element_type="widget"
-																				data-widget_type="divider.default">
-																				<div class="elementor-widget-container">
-																					<div class="elementor-divider">
-																						<span
-																							class="elementor-divider-separator">
-																						</span>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-685d590 elementor-widget elementor-widget-heading"
-																				data-id="685d590"
-																				data-element_type="widget"
-																				data-widget_type="heading.default">
-																				<div class="elementor-widget-container">
-																					<h2
-																						class="elementor-heading-title elementor-size-default">
-																						<span
-																							style="font-weight: 400;">We
-																							aim to </span>initiate the
-																						change to a complete waste
-																						management value chain<span
-																							style="font-weight: 400;">
-																							using </span>technology<span
-																							style="font-weight: 400;">
-																							and </span>data<span
-																							style="font-weight: 400;">.
-																							Disconnected stakeholders
-																							and inefficient practices in
-																							this value chain has led to
-																						</span><span
-																							style="font-weight: normal;">disastrous</span><span
-																							style="font-weight: 400;">
-																							outcomes around the world.
-																							Our </span>scalable<span
-																							style="font-weight: 400;">
-																							and </span>functional<span
-																							style="font-weight: 400;">
-																							solutions have been made to
-																							target each and every
-																							stakeholder connecting them
-																							to the </span>next
-																						generation of waste collection
-																						and processing. </h2>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e38699e"
-																	data-id="e38699e" data-element_type="column">
-																	<div
-																		class="elementor-column-wrap elementor-element-populated">
-																		<div class="elementor-widget-wrap">
-																			<div class="elementor-element elementor-element-ca0e65b elementor-invisible elementor-widget elementor-widget-image"
-																				data-id="ca0e65b"
-																				data-element_type="widget"
-																				data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;}"
-																				data-widget_type="image.default">
-																				<div class="elementor-widget-container">
-																					<div class="elementor-image">
-																						<img width="1000" height="999"
-																							src="https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg.png"
-																							class="attachment-full size-full"
-																							alt="" loading="lazy"
-																							srcset="https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg.png 1000w, https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg-300x300.png 300w, https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg-150x150.png 150w, https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg-768x767.png 768w"
-																							sizes="(max-width: 1000px) 100vw, 1000px" />
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</section>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<section
-								class="elementor-section elementor-top-section elementor-element elementor-element-aa038a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								data-id="aa038a2" data-element_type="section"
-								data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
-										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cc3a62d"
-											data-id="cc3a62d" data-element_type="column">
-											<div class="elementor-column-wrap">
-												<div class="elementor-widget-wrap">
-												</div>
-											</div>
-										</div>
-										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-08ec122"
-											data-id="08ec122" data-element_type="column"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-f112406 elementor-widget elementor-widget-heading"
-														data-id="f112406" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																<span style="font-weight: normal;">Our </span>Vision
-															</h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-10e659d elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-														data-id="10e659d" data-element_type="widget"
-														data-widget_type="divider.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-divider">
-																<span class="elementor-divider-separator">
-																</span>
-															</div>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-8c2634d elementor-widget elementor-widget-heading"
-														data-id="8c2634d" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																<span style="font-weight: 400;">We </span>aspire <span
-																	style="font-weight: 400;">to proactively
-																</span>strengthen <span
-																	style="font-weight: 400;">community
-																</span>engagement <span style="font-weight: 400;">in
-																</span>safeguarding <span style="font-weight: 400;">the
-																</span>environment <span style="font-weight: 400;">by
-																	introducing a </span>scalable data driven tech
-																ecosystem <span style="font-weight: 400;">that
-																</span>incentivises <span style="font-weight: 400;">and
-																</span>gamifies <span style="font-weight: 400;">proper
-																	waste management. We </span>leverage data <span
-																	style="font-weight: 400;">to integrate the
-																</span>entire waste management value chain <span
-																	style="font-weight: 400;">to drive </span>efficiency
-																<span style="font-weight: 400;">across the
-																</span>industry <span style="font-weight: 400;">all the
-																	while working towards a </span>more sustainable
-																<span style="font-weight: 400;">and </span>accessible
-																future <span style="font-weight: normal;">through
-																</span>technology<span
-																	style="font-weight: 400;">.</span></h2>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<section
-								class="elementor-section elementor-top-section elementor-element elementor-element-7b91ad5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								data-id="7b91ad5" data-element_type="section"
-								data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
-										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6a8c224"
-											data-id="6a8c224" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-73110b9 elementor-widget elementor-widget-heading"
-														data-id="73110b9" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																<span style="font-weight: normal;">Our</span> Pilot</h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-c777a43 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-														data-id="c777a43" data-element_type="widget"
-														data-widget_type="divider.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-divider">
-																<span class="elementor-divider-separator">
-																</span>
-															</div>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-622d950 elementor-widget elementor-widget-heading"
-														data-id="622d950" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																EKVA<span style="font-weight: normal;"> is a digital
-																	platform that aids waste collectors and EPR
-																	companies identify waste distribution all the while
-																	gamifying the process of waste disposal for
-																	users.</span></h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-7ea226e elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button"
-														data-id="7ea226e" data-element_type="widget"
-														data-widget_type="button.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-button-wrapper">
-																<a href="https://cityco.tech/ekva"
-																	class="elementor-button-link elementor-button elementor-size-sm"
-																	role="button">
-																	<span class="elementor-button-content-wrapper">
-																		<span
-																			class="elementor-button-icon elementor-align-icon-right">
-																			<i aria-hidden="true"
-																				class="fas fa-chevron-right"></i>
-																		</span>
-																		<span class="elementor-button-text">See
-																			Ekva</span>
-																	</span>
-																</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9f3bd35"
-											data-id="9f3bd35" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-a180dcb elementor-widget elementor-widget-image"
-														data-id="a180dcb" data-element_type="widget"
-														data-widget_type="image.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-image">
-																<img width="1024" height="200"
-																	src="https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-1024x200.png"
-																	class="attachment-large size-large" alt=""
-																	loading="lazy"
-																	srcset="https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-1024x200.png 1024w, https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-300x58.png 300w, https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-768x150.png 768w, https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-1536x299.png 1536w, https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755.png 2001w"
-																	sizes="(max-width: 1024px) 100vw, 1024px" /> </div>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-8e39a01 elementor-widget elementor-widget-heading"
-														data-id="8e39a01" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																<span style="font-weight: normal;">Our </span>Pilot</h2>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<section
-								class="elementor-section elementor-top-section elementor-element elementor-element-5004edd elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								data-id="5004edd" data-element_type="section"
-								data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
-										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ee7b1c6"
-											data-id="ee7b1c6" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-973b5ac elementor-widget elementor-widget-heading"
-														data-id="973b5ac" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																City<span style="font-weight: normal;">Collection</span>
-															</h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-5307dc5 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-														data-id="5307dc5" data-element_type="widget"
-														data-widget_type="divider.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-divider">
-																<span class="elementor-divider-separator">
-																</span>
-															</div>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-d6e7662 elementor-widget elementor-widget-heading"
-														data-id="d6e7662" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																<span style="font-weight: normal;">Our </span>Service
-															</h2>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b0dd506"
-											data-id="b0dd506" data-element_type="column"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-9a7442e elementor-widget elementor-widget-heading"
-														data-id="9a7442e" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																<span style="font-weight: 400;">An</span> at-home waste
-																collection system<span style="font-weight: 400;"> that
-																</span>incentivises <span style="font-weight: 400;">and
-																</span>gamifies <span style="font-weight: 400;">the
-																	process of waste disposal. </span></h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-fedb43a elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button"
-														data-id="fedb43a" data-element_type="widget"
-														data-widget_type="button.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-button-wrapper">
-																<a href="https://cityco.tech/ekva"
-																	class="elementor-button-link elementor-button elementor-size-sm"
-																	role="button">
-																	<span class="elementor-button-content-wrapper">
-																		<span
-																			class="elementor-button-icon elementor-align-icon-right">
-																			<i aria-hidden="true"
-																				class="fas fa-chevron-right"></i>
-																		</span>
-																		<span class="elementor-button-text">See
-																			CityCollection</span>
-																	</span>
-																</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<section
-								class="elementor-section elementor-top-section elementor-element elementor-element-b3792af elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								data-id="b3792af" data-element_type="section"
-								data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
-										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dcf7919"
-											data-id="dcf7919" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-c4e4c6f elementor-widget elementor-widget-heading"
-														data-id="c4e4c6f" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																<span style="font-weight: normal;">Our </span>Solutions
-															</h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-a12b72d elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-														data-id="a12b72d" data-element_type="widget"
-														data-widget_type="divider.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-divider">
-																<span class="elementor-divider-separator">
-																</span>
-															</div>
-														</div>
-													</div>
-													<section
-														class="elementor-section elementor-inner-section elementor-element elementor-element-ae6cdfa elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-														data-id="ae6cdfa" data-element_type="section">
-														<div class="elementor-container elementor-column-gap-default">
-															<div class="elementor-row">
-																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-14a296d"
-																	data-id="14a296d" data-element_type="column">
-																	<div
-																		class="elementor-column-wrap elementor-element-populated">
-																		<div class="elementor-widget-wrap">
-																			<div class="elementor-element elementor-element-90785b8 elementor-widget elementor-widget-image"
-																				data-id="90785b8"
-																				data-element_type="widget"
-																				data-widget_type="image.default">
-																				<div class="elementor-widget-container">
-																					<div class="elementor-image">
-																						<img width="1200" height="800"
-																							src="https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr.png"
-																							class="attachment-2048x2048 size-2048x2048"
-																							alt="" loading="lazy"
-																							srcset="https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr.png 1200w, https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr-300x200.png 300w, https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr-1024x683.png 1024w, https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr-768x512.png 768w"
-																							sizes="(max-width: 1200px) 100vw, 1200px" />
-																					</div>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-4c89219 elementor-widget elementor-widget-heading"
-																				data-id="4c89219"
-																				data-element_type="widget"
-																				data-widget_type="heading.default">
-																				<div class="elementor-widget-container">
-																					<h2
-																						class="elementor-heading-title elementor-size-default">
-																						City<span
-																							style="font-weight: 400;">Analytics</span>
-																					</h2>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-1f7b6ef elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-																				data-id="1f7b6ef"
-																				data-element_type="widget"
-																				data-widget_type="divider.default">
-																				<div class="elementor-widget-container">
-																					<div class="elementor-divider">
-																						<span
-																							class="elementor-divider-separator">
-																						</span>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-d3ed3ea elementor-widget elementor-widget-heading"
-																				data-id="d3ed3ea"
-																				data-element_type="widget"
-																				data-widget_type="heading.default">
-																				<div class="elementor-widget-container">
-																					<h2
-																						class="elementor-heading-title elementor-size-default">
-																						The intuitive dashboard that
-																						<span
-																							style="font-weight: 400;">brings
-																							together the mass amount
-																						</span>data<span
-																							style="font-weight: 400;">
-																						</span>generated <span
-																							style="font-weight: 400;">on
-																							our platform in an efficient
-																							and meaningful way.</span>
-																					</h2>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b37e3b8"
-																	data-id="b37e3b8" data-element_type="column">
-																	<div
-																		class="elementor-column-wrap elementor-element-populated">
-																		<div class="elementor-widget-wrap">
-																			<div class="elementor-element elementor-element-92fc412 elementor-widget elementor-widget-image"
-																				data-id="92fc412"
-																				data-element_type="widget"
-																				data-widget_type="image.default">
-																				<div class="elementor-widget-container">
-																					<div class="elementor-image">
-																						<img width="167" height="300"
-																							src="https://cityco.tech/wp-content/uploads/2020/12/1605336825471-167x300.png"
-																							class="attachment-medium size-medium"
-																							alt="" loading="lazy"
-																							srcset="https://cityco.tech/wp-content/uploads/2020/12/1605336825471-167x300.png 167w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471-571x1024.png 571w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471-768x1377.png 768w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471-857x1536.png 857w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471-1143x2048.png 1143w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471.png 1440w"
-																							sizes="(max-width: 167px) 100vw, 167px" />
-																					</div>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-dd33672 elementor-widget elementor-widget-heading"
-																				data-id="dd33672"
-																				data-element_type="widget"
-																				data-widget_type="heading.default">
-																				<div class="elementor-widget-container">
-																					<h2
-																						class="elementor-heading-title elementor-size-default">
-																						City<span
-																							style="font-weight: normal;">App</span>
-																					</h2>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-27a05a0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-																				data-id="27a05a0"
-																				data-element_type="widget"
-																				data-widget_type="divider.default">
-																				<div class="elementor-widget-container">
-																					<div class="elementor-divider">
-																						<span
-																							class="elementor-divider-separator">
-																						</span>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-04276f6 elementor-widget elementor-widget-heading"
-																				data-id="04276f6"
-																				data-element_type="widget"
-																				data-widget_type="heading.default">
-																				<div class="elementor-widget-container">
-																					<h2
-																						class="elementor-heading-title elementor-size-default">
-																						<span
-																							style="font-weight: normal;">The
-																						</span>sleek customer <span
-																							style="font-weight: normal;">facing
-																						</span>mobile application <span
-																							style="font-weight: normal;">where
-																							users can interface with
-																						</span>Ekva and
-																						CityCollection<span
-																							style="font-weight: normal;">
-																							and rest of the our
-																							services.</span></h2>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0a04a18"
-																	data-id="0a04a18" data-element_type="column">
-																	<div
-																		class="elementor-column-wrap elementor-element-populated">
-																		<div class="elementor-widget-wrap">
-																			<div class="elementor-element elementor-element-164d513 elementor-widget elementor-widget-image"
-																				data-id="164d513"
-																				data-element_type="widget"
-																				data-widget_type="image.default">
-																				<div class="elementor-widget-container">
-																					<div class="elementor-image">
-																						<img width="167" height="300"
-																							src="https://cityco.tech/wp-content/uploads/2020/04/CityBid_small-167x300.png"
-																							class="attachment-medium size-medium"
-																							alt="" loading="lazy"
-																							srcset="https://cityco.tech/wp-content/uploads/2020/04/CityBid_small-167x300.png 167w, https://cityco.tech/wp-content/uploads/2020/04/CityBid_small-572x1024.png 572w, https://cityco.tech/wp-content/uploads/2020/04/CityBid_small.png 600w"
-																							sizes="(max-width: 167px) 100vw, 167px" />
-																					</div>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-a7ad4d7 elementor-widget elementor-widget-heading"
-																				data-id="a7ad4d7"
-																				data-element_type="widget"
-																				data-widget_type="heading.default">
-																				<div class="elementor-widget-container">
-																					<h2
-																						class="elementor-heading-title elementor-size-default">
-																						City<span
-																							style="font-weight: normal;">Bid</span>
-																					</h2>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-fe195ff elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-																				data-id="fe195ff"
-																				data-element_type="widget"
-																				data-widget_type="divider.default">
-																				<div class="elementor-widget-container">
-																					<div class="elementor-divider">
-																						<span
-																							class="elementor-divider-separator">
-																						</span>
-																					</div>
-																				</div>
-																			</div>
-																			<div class="elementor-element elementor-element-b3e78bf elementor-widget elementor-widget-heading"
-																				data-id="b3e78bf"
-																				data-element_type="widget"
-																				data-widget_type="heading.default">
-																				<div class="elementor-widget-container">
-																					<h2
-																						class="elementor-heading-title elementor-size-default">
-																						<span
-																							style="font-weight: 400;">A
-																						</span>custom marketplace <span
-																							style="font-weight: 400;">that
-																							brings together the
-																						</span>fragmented recycling
-																						<span
-																							style="font-weight: normal;">industry
-																						</span><span
-																							style="font-weight: 400;">and
-																						</span>waste collectors<span
-																							style="font-weight: 400;">.</span>
-																					</h2>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</section>
-													<div class="elementor-element elementor-element-7742f9a elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
-														data-id="7742f9a" data-element_type="widget"
-														data-widget_type="button.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-button-wrapper">
-																<a href="https://cityco.tech/our-solutions"
-																	class="elementor-button-link elementor-button elementor-size-sm"
-																	role="button">
-																	<span class="elementor-button-content-wrapper">
-																		<span
-																			class="elementor-button-icon elementor-align-icon-right">
-																			<i aria-hidden="true"
-																				class="fas fa-chevron-right"></i>
-																		</span>
-																		<span class="elementor-button-text">See Our
-																			Solutions</span>
-																	</span>
-																</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<section
-								class="elementor-section elementor-top-section elementor-element elementor-element-ce45b46 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-								data-id="ce45b46" data-element_type="section"
-								data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-								<div class="elementor-background-overlay"></div>
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
-										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c57ba5b"
-											data-id="c57ba5b" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-ee83cbc elementor-widget elementor-widget-heading"
-														data-id="ee83cbc" data-element_type="widget"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																Want to Reach Us?</h2>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-e4ca4b9 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button"
-														data-id="e4ca4b9" data-element_type="widget"
-														data-widget_type="button.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-button-wrapper">
-																<a href="https://cityco.tech/contact-us"
-																	class="elementor-button-link elementor-button elementor-size-sm"
-																	role="button">
-																	<span class="elementor-button-content-wrapper">
-																		<span
-																			class="elementor-button-icon elementor-align-icon-right">
-																			<i aria-hidden="true"
-																				class="fas fa-chevron-right"></i>
-																		</span>
-																		<span class="elementor-button-text">Contact
-																			Us</span>
-																	</span>
-																</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
+									<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-41c0ea8" data-id="41c0ea8" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-9f319a8 elementor-widget elementor-widget-heading" data-id="9f319a8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">CityCo<span style="font-weight: normal;">.</span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3b617b5 elementor-widget elementor-widget-heading" data-id="3b617b5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: normal;">Connecting the Waste Management Value Chain <br>with Technology and Data.</span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-30df007 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="30df007" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://cityco.tech/contact-us" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-chevron-right"></i>			</span>
+						<span class="elementor-button-text">Contact Us</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
 						</div>
 					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dd5b5be elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="dd5b5be" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f66119c" data-id="f66119c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-07e9185 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="07e9185" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-175263c" data-id="175263c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3a5ad7f elementor-widget elementor-widget-heading" data-id="3a5ad7f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Who <span style="font-weight: normal;">are </span>we?</h2>		</div>
 				</div>
+				<div class="elementor-element elementor-element-c9e247f elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="c9e247f" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-685d590 elementor-widget elementor-widget-heading" data-id="685d590" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: 400;">We aim to </span>initiate the change to a complete waste management value chain<span style="font-weight: 400;"> using </span>technology<span style="font-weight: 400;"> and </span>data<span style="font-weight: 400;">. Disconnected stakeholders and inefficient practices in this value chain has led to </span><span style="font-weight: normal;">disastrous</span><span style="font-weight: 400;"> outcomes around the world. Our </span>scalable<span style="font-weight: 400;"> and </span>functional<span style="font-weight: 400;"> solutions have been made to target each and every stakeholder connecting them to the </span>next generation of waste collection and processing.  </h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e38699e" data-id="e38699e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ca0e65b elementor-invisible elementor-widget elementor-widget-image" data-id="ca0e65b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1000" height="999" src="https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg.png 1000w, https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg-300x300.png 300w, https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg-150x150.png 150w, https://cityco.tech/wp-content/uploads/2020/12/cityco.-lg-768x767.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-aa038a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="aa038a2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cc3a62d" data-id="cc3a62d" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-08ec122" data-id="08ec122" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f112406 elementor-widget elementor-widget-heading" data-id="f112406" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: normal;">Our </span>Vision</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-10e659d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="10e659d" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8c2634d elementor-widget elementor-widget-heading" data-id="8c2634d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: 400;">We </span>aspire <span style="font-weight: 400;">to proactively </span>strengthen <span style="font-weight: 400;">community </span>engagement <span style="font-weight: 400;">in </span>safeguarding <span style="font-weight: 400;">the </span>environment <span style="font-weight: 400;">by introducing a </span>scalable data driven tech ecosystem <span style="font-weight: 400;">that </span>incentivises <span style="font-weight: 400;">and </span>gamifies <span style="font-weight: 400;">proper waste management. We </span>leverage data <span style="font-weight: 400;">to integrate the </span>entire waste management value chain <span style="font-weight: 400;">to drive </span>efficiency <span style="font-weight: 400;">across the </span>industry <span style="font-weight: 400;">all the while working towards a </span>more sustainable <span style="font-weight: 400;">and </span>accessible future <span style="font-weight: normal;">through </span>technology<span style="font-weight: 400;">.</span></h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7b91ad5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b91ad5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6a8c224" data-id="6a8c224" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-73110b9 elementor-widget elementor-widget-heading" data-id="73110b9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: normal;">Our</span> Pilot</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c777a43 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="c777a43" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-622d950 elementor-widget elementor-widget-heading" data-id="622d950" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">EKVA<span style="font-weight: normal;"> is a digital platform that aids waste collectors and EPR companies identify waste distribution all the while gamifying the process of waste disposal for users.</span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7ea226e elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="7ea226e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://cityco.tech/citycollection" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-chevron-right"></i>			</span>
+						<span class="elementor-button-text">See Ekva</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9f3bd35" data-id="9f3bd35" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a180dcb elementor-widget elementor-widget-image" data-id="a180dcb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="200" src="https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-1024x200.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-1024x200.png 1024w, https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-300x58.png 300w, https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-768x150.png 768w, https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755-1536x299.png 1536w, https://cityco.tech/wp-content/uploads/2020/12/Ekva-Secondary-Without-Tagline-2x-e1606837835755.png 2001w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8e39a01 elementor-widget elementor-widget-heading" data-id="8e39a01" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: normal;">Our </span>Pilot</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5004edd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5004edd" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ee7b1c6" data-id="ee7b1c6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-973b5ac elementor-widget elementor-widget-heading" data-id="973b5ac" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">City<span style="font-weight: normal;">Collection</span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5307dc5 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="5307dc5" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d6e7662 elementor-widget elementor-widget-heading" data-id="d6e7662" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: normal;">Our </span>Service</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b0dd506" data-id="b0dd506" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-9a7442e elementor-widget elementor-widget-heading" data-id="9a7442e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: 400;">An</span> at-home waste collection system<span style="font-weight: 400;"> that </span>incentivises <span style="font-weight: 400;">and </span>gamifies <span style="font-weight: 400;">the process of waste disposal.  </span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fedb43a elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="fedb43a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://cityco.tech/citycollection" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-chevron-right"></i>			</span>
+						<span class="elementor-button-text">See CityCollection</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b3792af elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b3792af" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dcf7919" data-id="dcf7919" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c4e4c6f elementor-widget elementor-widget-heading" data-id="c4e4c6f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: normal;">Our </span>Solutions</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a12b72d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a12b72d" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-ae6cdfa elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ae6cdfa" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-14a296d" data-id="14a296d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-90785b8 elementor-widget elementor-widget-image" data-id="90785b8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1200" height="800" src="https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr.png" class="attachment-2048x2048 size-2048x2048" alt="" loading="lazy" srcset="https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr.png 1200w, https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr-300x200.png 300w, https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr-1024x683.png 1024w, https://cityco.tech/wp-content/uploads/2020/04/mediamodifier_image_screen_lr-768x512.png 768w" sizes="(max-width: 1200px) 100vw, 1200px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4c89219 elementor-widget elementor-widget-heading" data-id="4c89219" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">City<span style="font-weight: 400;">Analytics</span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1f7b6ef elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="1f7b6ef" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d3ed3ea elementor-widget elementor-widget-heading" data-id="d3ed3ea" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">The intuitive dashboard that <span style="font-weight: 400;">brings together the mass amount  </span>data<span style="font-weight: 400;"> </span>generated <span style="font-weight: 400;">on our platform in an efficient and meaningful way.</span></h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b37e3b8" data-id="b37e3b8" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-92fc412 elementor-widget elementor-widget-image" data-id="92fc412" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="167" height="300" src="https://cityco.tech/wp-content/uploads/2020/12/1605336825471-167x300.png" class="attachment-medium size-medium" alt="" loading="lazy" srcset="https://cityco.tech/wp-content/uploads/2020/12/1605336825471-167x300.png 167w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471-571x1024.png 571w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471-768x1377.png 768w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471-857x1536.png 857w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471-1143x2048.png 1143w, https://cityco.tech/wp-content/uploads/2020/12/1605336825471.png 1440w" sizes="(max-width: 167px) 100vw, 167px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-dd33672 elementor-widget elementor-widget-heading" data-id="dd33672" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">City<span style="font-weight: normal;">App</span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-27a05a0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="27a05a0" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-04276f6 elementor-widget elementor-widget-heading" data-id="04276f6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: normal;">The </span>sleek customer <span style="font-weight: normal;">facing </span>mobile application <span style="font-weight: normal;">where users can interface with </span>Ekva and CityCollection<span style="font-weight: normal;"> and rest of the our services.</span></h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0a04a18" data-id="0a04a18" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-164d513 elementor-widget elementor-widget-image" data-id="164d513" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="167" height="300" src="https://cityco.tech/wp-content/uploads/2020/04/CityBid_small-167x300.png" class="attachment-medium size-medium" alt="" loading="lazy" srcset="https://cityco.tech/wp-content/uploads/2020/04/CityBid_small-167x300.png 167w, https://cityco.tech/wp-content/uploads/2020/04/CityBid_small-572x1024.png 572w, https://cityco.tech/wp-content/uploads/2020/04/CityBid_small.png 600w" sizes="(max-width: 167px) 100vw, 167px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a7ad4d7 elementor-widget elementor-widget-heading" data-id="a7ad4d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">City<span style="font-weight: normal;">Bid</span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fe195ff elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fe195ff" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b3e78bf elementor-widget elementor-widget-heading" data-id="b3e78bf" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: 400;">A </span>custom marketplace <span style="font-weight: 400;">that brings together the </span>fragmented recycling <span style="font-weight: normal;">industry </span><span style="font-weight: 400;">and </span>waste collectors<span style="font-weight: 400;">.</span></h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-7742f9a elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="7742f9a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://cityco.tech/our-solutions" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-chevron-right"></i>			</span>
+						<span class="elementor-button-text">See Our Solutions</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ce45b46 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ce45b46" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c57ba5b" data-id="c57ba5b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ee83cbc elementor-widget elementor-widget-heading" data-id="ee83cbc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Want to Reach Us?</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e4ca4b9 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="e4ca4b9" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://cityco.tech/contact-us" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-chevron-right"></i>			</span>
+						<span class="elementor-button-text">Contact Us</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		
+	</main><!-- #main -->
 
-			</main><!-- #main -->
+	
+	
+	
+		
+<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+
+	
+	<div id="footer-inner" class="clr">
+
+		
+
+<div id="footer-bottom" class="clr no-footer-nav">
+
+	
+	<div id="footer-bottom-inner" class="container clr">
+
+		
+		
+			<div id="copyright" class="clr" role="contentinfo">
+				CityCollection | CityCo. 2020			</div><!-- #copyright -->
+
+			
+	</div><!-- #footer-bottom-inner -->
+
+	
+</div><!-- #footer-bottom -->
+
+
+	</div><!-- #footer-inner -->
+
+	
+</footer><!-- #footer -->
+
+	
+	
+</div><!-- #wrap -->
+
+
+</div><!-- #outer-wrap -->
+
+
+
+<a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up" aria-label="Scroll to the top of the page"></span></a>
 
 
 
 
-
-			<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter"
-				role="contentinfo">
-
-
-				<div id="footer-inner" class="clr">
-
-
-
-					<div id="footer-bottom" class="clr no-footer-nav">
-
-
-						<div id="footer-bottom-inner" class="container clr">
-
-
-
-							<div id="copyright" class="clr" role="contentinfo">
-								CityCollection | CityCo. 2020 </div><!-- #copyright -->
-
-
-						</div><!-- #footer-bottom-inner -->
-
-
-					</div><!-- #footer-bottom -->
-
-
-				</div><!-- #footer-inner -->
-
-
-			</footer><!-- #footer -->
-
-
-
-		</div><!-- #wrap -->
-
-
-	</div><!-- #outer-wrap -->
-
-
-
-	<a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up"
-			aria-label="Scroll to the top of the page"></span></a>
-
-
-
-
-	<script type='text/javascript' src='https://cityco.tech/wp-includes/js/imagesloaded.min.js?ver=4.1.4'
-		id='imagesloaded-js'></script>
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js?ver=2.0.0'
-		id='magnific-popup-js'></script>
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=2.0.0'
-		id='oceanwp-lightbox-js'></script>
-	<script type='text/javascript' id='oceanwp-main-js-extra'>
-		/* <![CDATA[ */
-		var oceanwpLocalize = { "isRTL": "", "menuSearchStyle": "disabled", "sidrSource": null, "sidrDisplace": "1", "sidrSide": "left", "sidrDropdownTarget": "link", "verticalHeaderTarget": "link", "customSelects": ".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select" };
+<script type='text/javascript' src='https://cityco.tech/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js?ver=2.0.0' id='magnific-popup-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=2.0.0' id='oceanwp-lightbox-js'></script>
+<script type='text/javascript' id='oceanwp-main-js-extra'>
+/* <![CDATA[ */
+var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select"};
 /* ]]> */
-	</script>
-	<script type='text/javascript' src='https://cityco.tech/wp-content/themes/oceanwp/assets/js/main.min.js?ver=2.0.0'
-		id='oceanwp-main-js'></script>
-	<script type='text/javascript' src='https://cityco.tech/wp-includes/js/wp-embed.min.js?ver=5.5.3'
-		id='wp-embed-js'></script>
-	<!--[if lt IE 9]>
+</script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/themes/oceanwp/assets/js/main.min.js?ver=2.0.0' id='oceanwp-main-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+<!--[if lt IE 9]>
 <script type='text/javascript' src='https://cityco.tech/wp-content/themes/oceanwp/assets/js/third/html5.min.js?ver=2.0.0' id='html5shiv-js'></script>
 <![endif]-->
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.0.14'
-		id='elementor-frontend-modules-js'></script>
-	<script type='text/javascript' src='https://cityco.tech/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'
-		id='jquery-ui-position-js'></script>
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1'
-		id='elementor-dialog-js'></script>
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'
-		id='elementor-waypoints-js'></script>
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6'
-		id='swiper-js'></script>
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.14'
-		id='share-link-js'></script>
-	<script type='text/javascript' id='elementor-frontend-js-before'>
-		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "version": "3.0.14", "is_static": false, "legacyMode": { "elementWrappers": true }, "urls": { "assets": "https:\/\/cityco.tech\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 13, "title": "CityCo%20%E2%80%93%20Disrupting%20Waste%20Management%20with%20Data", "excerpt": "", "featuredImage": false } };
-	</script>
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.14'
-		id='elementor-frontend-js'></script>
-	<script type='text/javascript' src='https://cityco.tech/wp-includes/js/underscore.min.js?ver=1.8.3'
-		id='underscore-js'></script>
-	<script type='text/javascript' id='wp-util-js-extra'>
-		/* <![CDATA[ */
-		var _wpUtilSettings = { "ajax": { "url": "\/citycollection\/wp-admin\/admin-ajax.php" } };
+<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.0.14' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4' id='jquery-ui-position-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.14' id='share-link-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.14","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/cityco.tech\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":13,"title":"CityCo%20%E2%80%93%20Disrupting%20Waste%20Management%20with%20Data","excerpt":"","featuredImage":false}};
+</script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.14' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='https://cityco.tech/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/citycollection\/wp-admin\/admin-ajax.php"}};
 /* ]]> */
-	</script>
-	<script type='text/javascript' src='https://cityco.tech/wp-includes/js/wp-util.min.js?ver=5.5.3'
-		id='wp-util-js'></script>
-	<script type='text/javascript' id='wpforms-elementor-js-extra'>
-		/* <![CDATA[ */
-		var wpformsElementorVars = { "recaptcha_type": "v2" };
+</script>
+<script type='text/javascript' src='https://cityco.tech/wp-includes/js/wp-util.min.js?ver=5.5.3' id='wp-util-js'></script>
+<script type='text/javascript' id='wpforms-elementor-js-extra'>
+/* <![CDATA[ */
+var wpformsElementorVars = {"recaptcha_type":"v2"};
 /* ]]> */
-	</script>
-	<script type='text/javascript'
-		src='https://cityco.tech/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.3.1'
-		id='wpforms-elementor-js'></script>
+</script>
+<script type='text/javascript' src='https://cityco.tech/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.3.1' id='wpforms-elementor-js'></script>
 </body>
-
 </html>
 
 <!--Generated by Endurance Page Cache-->
